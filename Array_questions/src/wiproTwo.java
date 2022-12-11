@@ -1,0 +1,83 @@
+
+public class wiproTwo {
+	
+	public static String[] transformToCode(int []arr) {
+		int size = arr.length;
+		String str[] = {};
+		for(int i = 0;i<size;i++) {
+			StringBuffer sb = new StringBuffer();
+			int n = arr[i];
+			if(length(n)==6){
+				sb.append('C');
+			}
+			else {
+				sb.append('W');
+			}
+			if(checkPrime(n)) {
+				sb.append('P');
+			}else {
+				sb.append('N');
+			}
+			int sum = digitSum(n);
+			sb.append(sum);
+			if(n%2==0) {
+				sb.append(n/2);
+			}else {
+				sb.append((n-1)/2);
+			}
+			str[i] = sb.toString();
+		}
+		return str;
+	}
+
+	public static int digitSum(int n) {
+		// TODO Auto-generated method stub
+		int count = 0;
+		
+		while(n>0) {
+			int rem = n%10;
+			count+=rem;
+			n/=10;
+			if(n==0 && count>9) {
+				n = count;
+				count = 0;
+			}
+		}
+		return count;
+	}
+
+	public static boolean checkPrime(int n) {
+		// TODO Auto-generated method stub
+		int i = 2;
+		while(i<n) {
+			if(n%i==0) {
+				return false;
+			}
+			i++;
+		}
+		return true;
+	}
+
+	public static int length(int n) {
+		// TODO Auto-generated method stub
+		int length = 0;
+		long temp = 1;
+		while (temp <= n) {
+		    length++;
+		    temp *= 10;
+		}
+		return length;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int arr[] = {12};
+//	
+//		String s[] = transformToCode(arr);
+//		for(String str:s) {
+//			System.out.println(s);
+//		}
+		System.out.println(3^5);
+	}
+
+}

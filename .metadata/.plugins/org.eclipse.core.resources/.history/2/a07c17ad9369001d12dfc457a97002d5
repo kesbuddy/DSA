@@ -1,0 +1,43 @@
+package slidingWindow;
+
+import java.util.HashMap;
+
+public class bhanu {
+	
+	public static String ans(String s) {
+		HashMap<String , Character> map = new HashMap<>();
+		map.put("001", 'C');
+		map.put("010", 'G');
+		map.put("011", 'A');
+		map.put("101", 'T');
+		map.put("110", 'U');
+		
+		String s1 = s.substring(0,3);
+		String ans = "";
+		for(int i = 3 ; i<s.length() ; i = i+3) {
+			String g = s.substring(i,i+3);
+			if(s1 == "000") {
+				if(map.get(g)=='U') {
+					ans+='T';
+					continue;
+				}
+				ans+=map.get(g);
+			}
+			else {
+				if(map.get(g)=='T') {
+					ans+='U';
+					continue;
+				}
+				ans+=map.get(g);
+			}
+		}
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "000001001011101010010110011";
+		System.out.println(ans(s));
+
+	}
+}

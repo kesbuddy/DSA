@@ -1,0 +1,15 @@
+img = imread("cat.jfif");
+gray1 = rgb2gray(img);
+red = img(:,:,1);
+green = img(:,:,2);
+blue = img(:,:,3);
+gray2 = 0.299*red + 0.587*green + 0.114*blue;
+diff = gray1 - gray2;
+subplot(2,2,1);
+imshow(img);
+subplot(2,2,2);
+imshow(gray1);
+subplot(2,2,3);
+imshow(gray2);
+subplot(2,2,4);
+imshow(diff);

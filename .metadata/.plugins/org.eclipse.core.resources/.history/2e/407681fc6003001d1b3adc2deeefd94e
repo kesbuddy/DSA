@@ -1,0 +1,71 @@
+
+public class wiproTwo {
+	
+	public String[] transformToCode(int []arr) {
+		int size = arr.length;
+		StringBuffer sb = new StringBuffer();
+		for(int i = 0;i<size;i++) {
+			int n = arr[i];
+			if(length(n)==6){
+				sb.append('C');
+			}
+			else {
+				sb.append('W');
+			}
+			if(checkPrime(n)) {
+				sb.append('P');
+			}else {
+				sb.append('N');
+			}
+			int sum = digitSum(n);
+		}
+	}
+
+	public int digitSum(int n) {
+		// TODO Auto-generated method stub
+		int count = 0;
+		
+		while(n>0) {
+			int rem = n%10;
+			count+=rem;
+			n/=10;
+		}
+		if(count%10!=count) {
+			while(count>0) {
+				int rem = n%10;
+				count+=rem;
+				n/=10;
+			}
+		}
+		return 0;
+	}
+
+	public boolean checkPrime(int n) {
+		// TODO Auto-generated method stub
+		int i = 2;
+		while(i<n) {
+			if(n%i==0) {
+				return false;
+			}
+			i++;
+		}
+		return true;
+	}
+
+	public int length(int n) {
+		// TODO Auto-generated method stub
+		int length = 0;
+		long temp = 1;
+		while (temp <= n) {
+		    length++;
+		    temp *= 10;
+		}
+		return length;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

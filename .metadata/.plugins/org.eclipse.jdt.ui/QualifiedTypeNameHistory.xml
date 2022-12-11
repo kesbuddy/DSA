@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="recursion.VehicleInterface"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="linked.DoubleNode"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="linked.delete_a_node_recursion"/>
+    <fullyQualifiedTypeName name="stacks.StackUsingArray"/>
+    <fullyQualifiedTypeName name="stacks.StackFullException"/>
+    <fullyQualifiedTypeName name="stacks.StackEmptyException"/>
+    <fullyQualifiedTypeName name="stacks.StackUsingLL"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="swap_alternate"/>
+    <fullyQualifiedTypeName name="queue.QueueUsingArray"/>
+    <fullyQualifiedTypeName name="queue.QueueUsingLL"/>
+    <fullyQualifiedTypeName name="queue.QueueEmptyException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="binaryTrees.BinaryTreeNode"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
+</qualifiedTypeNameHistroy>

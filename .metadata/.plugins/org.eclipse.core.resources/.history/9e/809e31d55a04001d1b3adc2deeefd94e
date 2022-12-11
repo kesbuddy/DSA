@@ -1,0 +1,66 @@
+
+public class result {
+	
+	public void encodeThreeStrings(String input1, String input2,String input3){
+		int size = input1.length();
+		if(size%3==0) {
+			String fronti1 = input1.substring(0,size/3);
+			String middlei1 = input1.substring((size/3),2*(size/3));
+			String endi1 = input1.substring((2*size/3) , size);
+		}
+		else if(size%3==1) {
+			String fronti1 = input1.substring(0,size/3);
+			String middlei1 = input1.substring(size/3,(2*size/3)+1);
+			String endi1 = input1.substring((2*size/3)+1,size);
+		}
+		else {
+			String fronti1 = input1.substring(0,(size/3)+1);
+			String middlei1 = input1.substring((size/3)+1,(2*size/3)-1);
+			String endi1 = input1.substring((2*size/3)-1,size);
+		}
+		
+		int size2 = input2.length();
+		if(size2%3==0) {
+			String fronti2 = input2.substring(0,size2/3);
+			String middlei2 = input2.substring((size2/3),2*(size2/3));
+			String endi2 = input2.substring((2*size2/3) , size2);
+		}
+		else if(size2%3==1) {
+			String fronti2 = input2.substring(0,size2/3);
+			String middlei2 = input2.substring(size2/3,(2*size2/3)+1);
+			String endi12 = input2.substring((2*size2/3)+1,size2);
+		}
+		else {
+			String fronti2 = input2.substring(0,(size2/3)+1);
+			String middlei2 = input2.substring((size2/3)+1,(2*size2/3)-1);
+			String endi2 = input2.substring((2*size2/3)-1,size2);
+		}
+		
+		int size3 = input3.length();
+		if(size3%3==0) {
+			String fronti3 = input3.substring(0,size3/3);
+			String middlei3 = input3.substring((size3/3),2*(size3/3));
+			String endi3 = input3.substring((2*size3/3) , size3);
+		}
+		else if(size3%3==1) {
+			String fronti3 = input3.substring(0,size3/3);
+			String middlei3 = input3.substring(size3/3,(2*size3/3)+1);
+			String endi3 = input3.substring((2*size3/3)+1,size3);
+		}
+		else {
+			String fronti3 = input3.substring(0,(size3/3)+1);
+			String middlei3 = input3.substring((size3/3)+1,(2*size3/3)-1);
+			String endi3 = input3.substring((2*size3/3)-1,size3);
+		}
+		
+		System.out.println(fronti3);
+	
+	
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

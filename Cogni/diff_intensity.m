@@ -1,0 +1,14 @@
+img = imread("cat.jfif");
+img1 = rgb2gray(img) ;
+cmp = 255-img1;
+img2 = double(img1);
+img3 = img2.^2;
+img4 = img2.^3;
+img5 = img2.^0.5;
+img6 = 1*log10(1+img2);
+subplot(321);imshow(img);title("Original Image");
+subplot(322);imshow(cmp);title("Complemented Image");
+subplot(323);imshow(img3,'DisplayRange',[]);title("2nd Power");
+subplot(324);imshow(img4,'DisplayRange',[]);title("3rd Power");
+subplot(325);imshow(img5,'DisplayRange',[]);title("1/2 Power");
+subplot(326);imshow(img6,'DisplayRange',[]);title("log transform");
